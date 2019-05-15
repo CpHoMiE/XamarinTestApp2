@@ -4,11 +4,35 @@
              xmlns:local="clr-namespace:XamarinTestApp2"
              x:Class="XamarinTestApp2.MainPage">
 
+    
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <!--안드로이드의 TextView랑 비슷한 Label-->
+
+        <Label>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Red Text" TextColor="Red" FontAttributes="Bold"/>
+                    <Span Text="Blue Text" TextColor="Blue"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        
+        <Label FontSize="Large" Text="Large Size Font"/>
+        <Label FontSize="Medium" Text="Medium Size Font"/>
+        <Label FontSize="Small" Text="Small Size Font"/>
+        <Label FontSize="Default" Text="Default Size Font"/>
+        <Label FontSize="Micro" Text="Micro Size Font"/>
+
+        <Label TextColor="Green" Text="Green Color Font"/>
+        <Label TextColor="Red" Text="Red Color Font"/>
+
+        <Label LineBreakMode="CharacterWrap" Text="wkwkwkkk ooqooqpqp woowowowo kqkkqkqkqk woowkr owow mq mwo oq"/>
+        <Label LineBreakMode="WordWrap" Text="wkwkwkkk ooqooqpqp woowowowo kqkkqkqkqk woowkr owow mq mwo oq"/>
+        <Label LineBreakMode="NoWrap" Text="wkwkwkkk ooqooqpqp woowowowo kqkkqkqkqk woowkr  owow mq mwo oq"/>
+        <Label LineBreakMode="HeadTruncation" Text="wkwkwkkk ooqooqpqp woowowowo kqkkqkqkqk woowkr  owow mq mwo oq" FontAttributes="bold,Italic"/>
+        <Label LineBreakMode="MiddleTruncation" Text="wkwkwkkk ooqooqpqp woowowowo kqkkqkqkqk woowkr  owow mq mwo oq" FontAttributes="Italic"/>
+        <Label LineBreakMode="TailTruncation" Text="wkwkwkkk ooqooqpqp woowowowo kqkkqkqkqk woowkr  owow mq mwo oq" FontAttributes="Italic"/>
     </StackLayout>
 
 </ContentPage>
